@@ -78,3 +78,21 @@ data plane      subject - system - Policy Enforcement Point (PEP) - trusted zone
                                             |
 control plane   Policy Desicion Point (PDP) = Policy Engine + Policy Administrator
 
+# Physical security controls
+
+- Bollards - allow people, prevent cars
+- Locked doors - control who passes through an area
+- Fencing - very obvious, can be opaque, should be hard to cut and prevent climbing with razor wire and height
+- CCTV - can replace guards, modern features like motion recognition are important
+- Security guard - physical protection of an area, 2 person integrity
+- Access badges - everyone sees if you're allowed, can be integrated with doors
+- Lighting - more light means more security
+- Sensors - infrared (motion), pressure (floor/windows), microwave (movement across large area), ultrasonic (sound)
+
+# Deception and disruption
+
+- Honeypots - attract attackers and trap them (it's probably a machine). Create a virtual world to explore, it's a battle to discern the real from the fake.
+- Honeynets - combine honeypots into a network which is more believable
+- Honeyfiles - files with fake info like a fake passwords.txt, an alert is sent if it's accessed
+- Honeytokens - if the bait is distributed, you can trace back where it came from (fake api credentials, email addresses)
+
