@@ -96,3 +96,59 @@ control plane   Policy Desicion Point (PDP) = Policy Engine + Policy Administrat
 - Honeyfiles - files with fake info like a fake passwords.txt, an alert is sent if it's accessed
 - Honeytokens - if the bait is distributed, you can trace back where it came from (fake api credentials, email addresses)
 
+# Change Management
+
+Both making changes and ignoring changes are common risks in enterprise.
+There have to be clear policies regarding frequency, installation process and rollback procedures.
+
+A typical approval process:
+- Complete request forms
+- Determine purpose
+- Determine scope
+- Schedule
+- Determine affected systems
+- Analyze the risk
+- Get approval from the change control board
+- Get end-user acceptance
+
+The owner manages the process, but doesn't actually perform the change.
+
+You have to consider which stakeholders are affected, which is not obvious.
+
+## Testing
+- Sandbox testing
+- Use before deployment
+- Confirm the backout plan
+A change can always go wrong, there should always be a backout plan.
+
+## Maintenance window
+- During the workday is generally not good
+- Overnights are better
+- Time of year may be important
+
+# Technical change management
+
+The 'how' instead of the 'what' in change management.
+
+The scope of a change is documented, and a change approval isn't permission to make any change.
+The scope might need to change though, it's impossible to prepare for all possibilities.
+
+## Downtime
+- Usually scheduled in non-production hours
+- Switch to secondary system, upgrade primary
+- The process should be as automated as possible
+- Send emails and calendar updates
+
+## Restarts
+Might have to reboot os, power cycle a switch, restart service/app.
+
+## Legacy apps
+- No developer, you're the support team
+- Document the system. May be quirky
+
+Consider dependencies, modifying one component may require changing/restarting others
+
+Update documentation.
+
+Version control systems are good. Many opportunities: router configurations, os patches, app registry entries
+
