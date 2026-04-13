@@ -152,3 +152,18 @@ Update documentation.
 
 Version control systems are good. Many opportunities: router configurations, os patches, app registry entries
 
+# Public Key Infrastructure (PKI)
+
+All about trust - certificates and their distribution.
+
+Shared keys can be hard to distribute, symmetric encryption is mainly good for speed.
+
+The keys can't be derived from each other.
+
+- if private key decrypts - confidentiality, sending a message only one person can read (eg. diffie hellman)
+- if public key decrypts - authentication, proving to the world that a message came from you (digital signature)
+
+Key escrow - someone else has your private keys, like your company.
+May be necessary to decrypt your data after you leave the company.
+Controversial, but sometimes required.
+
