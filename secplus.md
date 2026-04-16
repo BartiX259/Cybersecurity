@@ -167,3 +167,23 @@ Key escrow - someone else has your private keys, like your company.
 May be necessary to decrypt your data after you leave the company.
 Controversial, but sometimes required.
 
+
+# Encrypting data
+
+On storage devices:
+- Full-disk / partition encryption (BitLocker, FileVault)
+- File encryption (EFS - Encrypting File System)
+
+Database encryption:
+Encrypt the whole database with a symmetric key, or encrypt individual columns, separate key for each.
+For example, keep the id and name as plaintext for fast queries, but encrypt the sensitive data columns.
+
+Transport encryption:
+- In the application - https
+- Everything - VPN (Client based using SSL/TLS, site-to-site using IPSEC)
+
+Key stretching:
+To make our existing keys more secure, we can perform mutltiple processes.
+Hash a password, then hash the hash and so on.
+Brute force attacks require more effort, even though the key is small.
+
