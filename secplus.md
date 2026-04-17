@@ -187,3 +187,31 @@ To make our existing keys more secure, we can perform mutltiple processes.
 Hash a password, then hash the hash and so on.
 Brute force attacks require more effort, even though the key is small.
 
+# Key exchange
+
+- Out of band - not over network (in person, telephone, courier)
+- In band - on the network, assymetric encryption
+
+Client can encrypt a symmetric session key with server's public key.
+Or use diffie hellman for both sides to agree.
+
+# Encryption technologies
+
+## TPM (Trusted Platform Module)
+Motherboard component, hardware cryptographic functions, rng, keygen.
+Has persistent memory, unique keys burned in during manufacturing. Can also store other keys and hardware config.
+Protected by a password, no dictionary attacks.
+
+## HSM (Hardware Security Module)
+Used in data centers, securely store thousands of keys.
+Can accelerate crypto functions, offload from cpu of other devices.
+Need redundant power supply.
+
+## Key management system
+Store many different keys for different services.
+Associate keys with users, automatically rotate keys, log usage.
+
+## Secure enclave
+Different technologies and names. Generally a processor separate from the main one.
+Has its own boot ROM, monitors system boot, has true rng, real time encryption, root crypto keys etc.
+
