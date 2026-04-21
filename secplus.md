@@ -215,3 +215,23 @@ Associate keys with users, automatically rotate keys, log usage.
 Different technologies and names. Generally a processor separate from the main one.
 Has its own boot ROM, monitors system boot, has true rng, real time encryption, root crypto keys etc.
 
+# Obfuscation
+
+Hiding information in plain sight. Security by obscurity (not really security).
+
+## Steganography
+Hide info in images, audio, video, TCP packets.
+Covertext - document containing the hidden info.
+
+## Tokenization
+Replace sensitive data with a non-sensitive token. Common with credit card processing.
+The token isn't mathematically related to the original data.
+
+1. Phone registers credit card with a Remote Token Service Server, it gives tokens.
+2. Phone uses one of the tokens in transaction.
+3. Merchant server verifies token with the Remote Token Service Server.
+
+## Data masking
+
+Hide some of the original data. For example only show last 4 digits of credit card number.
+
