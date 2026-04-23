@@ -235,3 +235,45 @@ The token isn't mathematically related to the original data.
 
 Hide some of the original data. For example only show last 4 digits of credit card number.
 
+# Blockchain
+
+A distributed ledger. Everyone on the blockchain network maintains the ledger.
+To make a transaction, broadcast it to everyone. Multiple transactions make a block.
+A block has a hash for integrity, part of the hash is the hash of the previous block, which makes editing
+older blocks exponentially harder.
+
+Many practical applications:
+- Payment processing
+- Digital identification
+- Supply chain monitoring
+- Digital voting
+
+# Certificates
+
+A certificate contains a public key, digital signature and other details about the key holder.
+
+Third party sources of trust:
+- CA (certificate authority)
+- HSM (hardware security module)
+- Secure enclave
+- Web of trust
+
+## CA's
+
+There's 100s of CA's built into the browser. You have to buy a certificate in one of them to gain trust.
+
+CSR - certificate signing request:
+Send *Applicant Identifying Information* and your public key. That's the CSR.
+The CA validates the information, confirms DNS emails and website ownership, then signs the certificate
+with its private key and returns it. 
+
+Private CA - Your company is the only one that will use it. Install CA certificate on all internal devices.
+Works like a certificate you purchased.
+
+Wildcard certificates - allows cert to support many different domains. For example: *.birdfeeder.live, birdfeeder.info
+
+Key revocation:
+CRL - Certificate Revocation List. Maintained by CA. Originally browser has to download the list and check.
+OCSP stapling - Online Certificate Status Protocol. Have the web server verify its own status.
+This OCSP status is "stapled" into the SSL/TLS handshake, digitally signed by CA.
+
