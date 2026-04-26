@@ -277,3 +277,18 @@ CRL - Certificate Revocation List. Maintained by CA. Originally browser has to d
 OCSP stapling - Online Certificate Status Protocol. Have the web server verify its own status.
 This OCSP status is "stapled" into the SSL/TLS handshake, digitally signed by CA.
 
+# Threat actors
+
+- Internal/external
+- No money/extensive funding
+- Unknown capabilities
+- Many possible motivations
+
+Examples:
+- Nation - external, high resources and sophistication. Data exfiltration, war, revenge, disruption.
+- Unskilled hacker - external, low resources and sophistication. Disruption, data exfiltration
+- Hacktivist - external, some funding and high sophistication. Philosophical beliefs, revenge, disrution.
+- Insider threat - internal, many resources, medium sophistication. Revenge, financial gain.
+- Organized crime - external, high resources and sophistication. Financial.
+- Shadow IT - internal, many resources, limited sophistication. Philosophical beliefs, revenge.
+
