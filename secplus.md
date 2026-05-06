@@ -292,3 +292,49 @@ Examples:
 - Organized crime - external, high resources and sophistication. Financial.
 - Shadow IT - internal, many resources, limited sophistication. Philosophical beliefs, revenge.
 
+# Threat Vectors
+
+A method used by an attacker. Some more vulnerable than others, some existing and some new.
+
+## Message based
+Phishing email/sms with malicious link/attachment. One of the biggest and most successful.
+
+## Image based
+Inject HTML or js in SVG images.
+
+## File based
+Not just executables: Adobe PDF, ZIP, MS Office macros.
+
+## Voice call
+- Vishing - phishing over the phone
+- Spam over IP - spam with VOIP
+- War dialing - scan a list of numbers by calling them
+- Distrupting voice calls
+
+## Removable device
+Use a USB to get around firewall. USB can inject malware, act as a keyboard or be used to steal data.
+
+## Vulnerable software
+- Client based - infected executable. May require constant updates.
+- Agentless (webapp) - if server is infected, all clients could be compromised.
+
+## Unsupported systems
+Outdated os, a single system could be an entry. Keeping track of all your systems and patching is important.
+
+## Unsecure network
+Wireless - unsecure auth protocols (WEP, WPA, WPA2)
+Wired - no 802.1x
+Bluetooth - recoinnassance, implementation vulerabilities
+
+## Open ports
+Every port is an opportunity. Service can be vulnerable and more services expand the attack surface.
+Firewalls must allow traffic to open ports.
+
+## Default credentials
+Provides full access, easily findable.
+
+## Supply chain vectors
+- Tampering during or after manufacturing
+- Vulerabilities in your MSP's
+MSP (managed service provider) - a company that provides IT services and support to other companies
+
