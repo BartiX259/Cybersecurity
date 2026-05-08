@@ -338,3 +338,19 @@ Provides full access, easily findable.
 - Vulerabilities in your MSP's
 MSP (managed service provider) - a company that provides IT services and support to other companies
 
+# Phishing
+
+Social engineering via a communications method to make you give up private information.
+
+When receiving a link in a message, check the url, check the webpage (usually something's not right - spelling/spacing).
+Typosquatting - the email address might be close to legitimate
+Pretexting - lying to get information, attacker is a character in a situation they create
+
+With access to email credentials, attacker could use the reset password feature on websites to gain access to them.
+Phishing webiste can also just download malware.
+
+Vishing - phishing over voice. Fake security checks or bank updates.
+Smishing - phishing over SMS. Links or requests for information.
+
+Many different variations - fake check scam, verification code scam, advance fee-scam.
+
