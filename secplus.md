@@ -354,3 +354,25 @@ Smishing - phishing over SMS. Links or requests for information.
 
 Many different variations - fake check scam, verification code scam, advance fee-scam.
 
+# Impersonation
+
+Pretext - before the attack, there's an actor and a story.
+"I'm Wendy from Microsoft, your computer has problems."
+They can use details from recoinnassance, pretend to be someone higher in rank,
+throw technical jargon, pretend to be a buddy.
+
+Goals:
+- Extract information. Well documented psychological techniques are used, it's not obvious.
+- Identity fraud. For example, open an account in your name.
+
+Protection:
+- Never volunteer information
+- Don't disclose personal details
+- Verify before revealing info, verification should be encouraged by the caller
+
+# Watering hole attack
+
+Instead of directly breaking into a network or system via some vulerability, infect a website which the victim uses.
+
+To prevent, use defense-in-depth. Have an anti-virus, firewall, IPS running together, one of them might stop the attack.
+
