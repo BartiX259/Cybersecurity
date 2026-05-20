@@ -376,3 +376,24 @@ Instead of directly breaking into a network or system via some vulerability, inf
 
 To prevent, use defense-in-depth. Have an anti-virus, firewall, IPS running together, one of them might stop the attack.
 
+# Misinformation
+
+Spreading factually incorrect information.
+Goal: influence campaigns, sway public opinion on political issues.
+Can be done by entire nations, through advertising, on social media.
+Process: create fake users, post content, amplify message with likes/shares, real users share, mass media picks it up.
+
+## Brand Impersonation
+
+Pretend to be a global brand.
+Create tens of thousands of impersonated sites, they might pop up on google.
+Visitors are presented with a pop up, usually malware.
+
+# Memory injections
+
+Malware has to be loaded into memory to run, so memory forensics can find the malicious code.
+It can run as its own process or be injected into another.
+Memory injection - add code into the memory of an existing process.
+Get access to the data of that process, as well as its privileges.
+DLL injection - inject a path to a malicious DLL into a target process.
+
