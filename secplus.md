@@ -397,3 +397,20 @@ Memory injection - add code into the memory of an existing process.
 Get access to the data of that process, as well as its privileges.
 DLL injection - inject a path to a malicious DLL into a target process.
 
+# Buffer overflows
+
+Writing more bytes to a buffer than its capacity, no bounds checking by the programmer.
+For example, spilling over from a buffer into a variable with user permissions.
+Not a simple exploit, even if you can do it, it might not be useful or the program might crash.
+A useful buffer overflow is repeatable.
+
+# Race conditions
+
+Sometimes things happen at the same time.
+This can cause problems if not accounted for.
+
+TOCTOU - time-of-check to time-of-use attack.
+- Check the system
+- Something happens in between
+- Use the computed check
+
