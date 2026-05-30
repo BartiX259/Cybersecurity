@@ -414,3 +414,26 @@ TOCTOU - time-of-check to time-of-use attack.
 - Something happens in between
 - Use the computed check
 
+# Malicious updates
+
+The os and apps should always be updated, but updating has its own security concerns. Best practices:
+- Always have a backup
+- Install from trusted sources
+Visit the developer's site directly, don't trust a random update button or downloaded file. Many os's only allow signed apps.
+
+App self updates - generally safe, but can potentially be used by attackers to distribute malware.
+
+# OS Vulnerabilities
+
+Everyone has an os, which makes it a very big target. Millions of lines of code means more opportunities for a security issue.
+The vulnerabilities are already in there, we've just not found them yet.
+This is why there are so many security patches, for example fixing 50 vulnerabilities in one month.
+Update as fast as possible, it's a race between you and attackers, this may require testing before deployment, a reboot in production and a fallback plan.
+
+# SQL Injection
+
+Enabled because of bad programming, the app should properly handle input and output.
+SQLi is common because SQL is used everywhere and it's easy to forget input sanitization. Also very easy to perform, just inject a form or field.
+example, injected code in <>:
+"SELECT * FROM users WHERE name = '<Professor' OR '1' = '1>'";
+
