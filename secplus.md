@@ -454,3 +454,14 @@ Protection:
 - keep the browser updated
 - as a dev, validate inputs
 
+# Hardware vulnerabilities
+
+- Firmware - vendors are the only one who can fix, can take a while
+- End of life (EOL) - manufacturer stops selling the product,
+may continue supporting with patches and updates
+- End of service life (EOSL) - stops selling and supporting,
+may have a premium cost support option
+EOSL is a significant concern
+- Legacy platforms - may be running older/EOSL os/apps,
+may require additional security protections (firewall rules, IPS signatures)
+
