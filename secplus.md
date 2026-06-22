@@ -437,3 +437,20 @@ SQLi is common because SQL is used everywhere and it's easy to forget input sani
 example, injected code in <>:
 "SELECT * FROM users WHERE name = '<Professor' OR '1' = '1>'";
 
+
+# XSS
+
+Originally called cross-site because of browser security flaws.
+One of the most common web app vulnerabilities.
+Commonly uses js.
+For example script embedded in url sends attacker the victim's cookies.
+Reflected:
+script can run in an input, transferred from the url
+Persistent:
+attacker posts a message with a script to a social network
+Protection:
+- don't click links blindly
+- consider disabling js
+- keep the browser updated
+- as a dev, validate inputs
+
