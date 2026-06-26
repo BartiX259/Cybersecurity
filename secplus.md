@@ -465,3 +465,14 @@ EOSL is a significant concern
 - Legacy platforms - may be running older/EOSL os/apps,
 may require additional security protections (firewall rules, IPS signatures)
 
+# Virtualization vulnerabilities
+
+- VM escape - get access to other vm's on the hypervisor or to the host
+March 2017 Pwn2Own competiton:
+1. JS engine bug in Microsoft Edge - code exectution
+2. Windows 10 kernel bug - compromise the vm os
+3. VMware harware simulation bug - escape to host
+Patches were released soon after.
+- Resource reuse - for example host has 4gb ram, has 3 vm's with 2gb each. The hypervisor has to allocate
+properly to share, but data can be inadvertently shared between vm's. Hypervisor should prevent this.
+
