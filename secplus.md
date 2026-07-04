@@ -437,7 +437,6 @@ SQLi is common because SQL is used everywhere and it's easy to forget input sani
 example, injected code in <>:
 "SELECT * FROM users WHERE name = '<Professor' OR '1' = '1>'";
 
-
 # XSS
 
 Originally called cross-site because of browser security flaws.
@@ -475,4 +474,32 @@ March 2017 Pwn2Own competiton:
 Patches were released soon after.
 - Resource reuse - for example host has 4gb ram, has 3 vm's with 2gb each. The hypervisor has to allocate
 properly to share, but data can be inadvertently shared between vm's. Hypervisor should prevent this.
+
+# Security in the cloud
+
+Cloud adoption has become universal, but simple best-practices aren't followed. A lot of lacking MFA, unpatched code.
+Service attacks:
+- DoS
+- Auth bypass
+- Directory traversal
+- RCE
+Application attacks:
+- Log4j and Spring Cloud Function
+- XSS
+- OOB write
+- SQL injection
+
+# Supply Chain Vulnerabilities
+
+There's many types of service providers and they often have access to internal services.
+Companies often have ongoing security audits on their service providers.
+Nov 2013 Target Corp. breach 40 million credit cards stolen because a Heating and AC firm was infected. AC control was on the same network as cash registers.
+
+Hardware providers could also be malicious. Companies should use a small supplier base instead of buying hardware from anyone.
+July 2022 reseller CEO arrested. Over 30 companies selling counterfeit Cisco products.
+
+Software providers:
+- Inital installation - digital signature should be confirmed
+- Updates - sometimes automatic, are they secure?
+- Open source is not immune
 
