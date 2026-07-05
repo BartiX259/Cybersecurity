@@ -503,3 +503,14 @@ Software providers:
 - Updates - sometimes automatic, are they secure?
 - Open source is not immune
 
+# Misconfiguration vulnerabilities
+
+- Open permissions
+June 2017 - 14 million Verizon records exposed with no security.
+- Unsecured admin accounts. Login to root should be disabled. Accounts with root perms should be secure.
+- Insecure protocols
+Unencrypted: HTTP, Telnet, FTP, SMTP, IMAP, Pop3. Verify with a packet capture.
+- Default settings
+Mirai botnet - open source, takes over IoT devices. Scans for cameras, routers, doorbells, etc. with default configurations.
+- Open ports - should be as few as possible, often managed with a firewall but that can be complex.
+
