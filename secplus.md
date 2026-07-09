@@ -514,3 +514,23 @@ Unencrypted: HTTP, Telnet, FTP, SMTP, IMAP, Pop3. Verify with a packet capture.
 Mirai botnet - open source, takes over IoT devices. Scans for cameras, routers, doorbells, etc. with default configurations.
 - Open ports - should be as few as possible, often managed with a firewall but that can be complex.
 
+# Mobile Device Vulnerabilities
+
+- Rooting/jailbreaking - replace the os, circumvents all security features
+- Sideloading - install an app from outside the official app store
+
+# Zero-day Vulnerabilities
+
+Vulnerabilities that haven't been found. Both good guys and attackers are trying to find them.
+Zero-day attack - an attack without a patch or method of mitigation. Difficult to defend against.
+
+# Malware
+
+Goals: gather information, show ads, encrypt data
+Data is valuable - family pictures, financial info, company data, etc.
+Data may be valuable on its own or you're willing to pay to recover it.
+
+## Ransomware
+
+Encrypts data until you pay to get it back. The os still runs to show messages but doesn't work properly.
+To prevent you need a disk backup and keep the os/apps/anti-virus up to date.
