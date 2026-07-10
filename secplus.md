@@ -534,3 +534,32 @@ Data may be valuable on its own or you're willing to pay to recover it.
 
 Encrypts data until you pay to get it back. The os still runs to show messages but doesn't work properly.
 To prevent you need a disk backup and keep the os/apps/anti-virus up to date.
+
+## Virus
+
+Malware that replicates itself by modifying other programs, reproduces through the file system or network.
+Types:
+- Program viruses
+- Boot sector viruses
+- Script viruses (including browser)
+- Macro viruses, e.g. MS Office
+Fileless virus - runs in memory but not installed anywhere. Hard to detect.
+
+## Worms
+
+Malware that replicates itself without any user input. Dangerous but rare.
+Wannacry worm: infected computer searches the network for a vulnerable computer, installs the worm including ransomware and propagates.
+
+## Spyware
+
+Malware that spies on you. Advertising, identity theft, affiliate fraud, spying on browser surfing habits, keyloggers.
+To protect use anti-malware software and be careful what you install.
+
+## Bloatware
+
+A new computer or phone including apps you don't need/expect. Uses storage space and potentially cpu/ram if autostarted,
+could open your system to exploits. Removing may not be obvious:
+- Built-in uninstaller
+- App's own uninstaller
+- Third party uninstaller
+
