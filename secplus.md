@@ -563,3 +563,10 @@ could open your system to exploits. Removing may not be obvious:
 - App's own uninstaller
 - Third party uninstaller
 
+## Other
+
+Keyloggers - capture logins, passwords, messages. Circumvents encryption. Also clipboard logging, screen logging.
+Logic bomb - waits for a predefined time or event. Hard to identify. To prevent: formal change control, electronic monitoring and auditing.
+Rootkit - originally a unix technique. Modifies core system files as part of the kernel. Can be invisible to OS or anti-virus.
+To remove use a remover specific to the rootkit or secure boot with UEFI.
+
