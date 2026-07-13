@@ -570,3 +570,38 @@ Logic bomb - waits for a predefined time or event. Hard to identify. To prevent:
 Rootkit - originally a unix technique. Modifies core system files as part of the kernel. Can be invisible to OS or anti-virus.
 To remove use a remover specific to the rootkit or secure boot with UEFI.
 
+# Attacks
+
+## Physical attacks
+
+- Brute force - breaking in by any means necessary. Weak doors or windows can be vulnerable.
+- RFID cloning - duplicators are less than $50. The copy process is very quick. MFA prevents this.
+- Environmental attack - attack anything supporting the technology like power lines, maybe turn off the cooling.
+
+## Denial of Service
+
+Overload a service to make it fail, or take advantage of vulerability.
+Gives competitive advantage or acts as a smokescreen.
+Can be unintentional.
+
+DDoS - launch an army of computers to bring down a service, usually with a botnet.
+The attacker may have less resources than the victim.
+DDoS amplification - for example an IP spoofed DNS query, about 15 characters turning into 1k and going to one device.
+
+## DNS spoofing/poisoning
+
+Change the DNS resolution to what you want.
+- Modify the DNS server
+- Modify the client's host file
+- Send a fake response to a valid DNS query
+
+Domain hijacking - get access to the domain registration. Don't need to touch the actual servers. Requires username and password.
+URL hijacking - take advantage of misspelling, typing errors, different phrasing or different top-level domain (.org vs .com).
+
+If an attacker can redirect traffic to their own site:
+- Make money from ads
+- Sell the misspelled URL to the actual owner
+- Redirect to competitor
+- Phishing site
+- Make you download malware
+
