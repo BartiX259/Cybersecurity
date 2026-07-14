@@ -605,3 +605,17 @@ If an attacker can redirect traffic to their own site:
 - Phishing site
 - Make you download malware
 
+## Wireless attacks
+
+- Deauth - 802.11 management frames were originally unprotected. Fixed by 802.11ac
+- RF jamming (Radio frequency) - transmit interfering wireless signals. Sometimes unintentional - microwaves, fluorescent lights.
+Jamming types: constant, random bits, legitimate frames. Reactive jamming - only when someone tries to communicate.
+Needs to be somewhere close. You can go 'fox hunting' to hunt down the jam with the right equipment.
+
+## On-path/MITM attacks
+
+Redirects your traffic then passes it on to the destination.
+- ARP poisoning - mitm using local subnet, ARP has no security.
+- Man in the browser - malware does the proxy work. For example waits for login into back account capturing bank credentials.
+Works even with encryption.
+
