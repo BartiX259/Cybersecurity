@@ -619,3 +619,27 @@ Redirects your traffic then passes it on to the destination.
 - Man in the browser - malware does the proxy work. For example waits for login into back account capturing bank credentials.
 Works even with encryption.
 
+## Replay attack
+
+To capture: network tap, ARP poisoning, malware. Not on-path but it is common to use on-path to gather information.
+Pass the Hash: capture username and hashed password and send it to the server. To avoid use encryption or salt the password every time.
+Browser cookies and session IDs. Can store personal info or sessions ID which attacker can use to get access without credentials.
+To prevent session hijacking encrypt end-to-end. Encrypt end-to-somewhere (vpn), data is encrypted for at least part of the journey.
+
+## Privilege escalation
+
+Exploit vulnerability, bug or design flow to get higher level access to a system. High priority as any user can be an administrator.
+Horizontal privilege escalation - user A can access user B, but not the admin.
+Mitigation: patch quickly, use updated anti-virus, prevent data execution, address space layout randomization.
+
+## CSRF
+
+Takes advantage of cross-site requests which are very common. Can make requests from your account.
+Significant web application development oversight, usually a CSRF token is needed to prevent a forgery.
+For example send a link to a user logged into their bank web site. When the link is clicked a transfer request is sent to the bank website.
+Since the user is already authenticated it goes through.
+
+## Directory/Path traversal
+
+Read files from a web server outside the website's file directory, for example system files.
+Web server software or web application code vulnerability.
