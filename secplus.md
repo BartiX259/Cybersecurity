@@ -643,3 +643,17 @@ Since the user is already authenticated it goes through.
 
 Read files from a web server outside the website's file directory, for example system files.
 Web server software or web application code vulnerability.
+
+# Cryptographic attacks
+
+Algorithms can be insecure like MD5, otherwise the implementation can be problematic.
+
+Birthday attack - any hash collision, not a collision specific with some hash, but any collision across many hashes. (In a classroom of 23 students, the chance of 2 sharing a birthday is 50%)
+Downgrade attack - force the system to downgrade their security.
+SSL stripping - on-path attack, strips the 's' from https. First request is http, server sends 301 moved but attacker doesn't send it to the user, instead they use https between the server but http between the user, so they can see unencrypted credentials.
+
+# Password attacks
+
+Spraying - try about 3 most common passwords, then move on to the next account. No lockouts/alerts.
+Brute force - try every possible password combination until the hash matches. Generally only works offline.
+
