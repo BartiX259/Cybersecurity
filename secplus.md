@@ -657,3 +657,45 @@ SSL stripping - on-path attack, strips the 's' from https. First request is http
 Spraying - try about 3 most common passwords, then move on to the next account. No lockouts/alerts.
 Brute force - try every possible password combination until the hash matches. Generally only works offline.
 
+# Indicators of Compromise
+
+An event that indicates an intrusion with high confidence.
+- Unusual amount of network activity
+- Change to file hash values
+- Irregular international traffic
+- Changes to DNS data
+- Uncommon login patterns
+- Spikes of read requests to certain files
+
+- Account lockout
+
+Can be exceeded login attempts or administratively disabled.
+May be part of a larger plan, for example attacker locks account
+and calls support line to reset the password.
+
+- Concurrent session usage,
+multiple account logins from multiple locations. Can be diffucult to track down.
+
+- Blocked content,
+viruses might disable updates on the anti-malware software, security patches, removal tools.
+
+- Impossible travel,
+for example login from US, 3 minutes later from Australia, easy to track down.
+
+- Resource consumption, every attacker's action has an equal and opposite reaction.
+Often the first real notification of an issue, the attacker may have been in for months.
+
+- Resource inavailability
+Server is down, network is disrupted, server outage, encrypted data.
+
+- Out-of-cycle logging - an unexpected log at an unexpected time.
+For example os patches normally happen on a schedule, but logs show otherwise.
+Very common in firewall logs.
+
+- Missing logs - attackers will delete logs to cover their tracks. Can still
+be detected because logs are everywhere, auth, file access, firewall, etc.
+Attacker shouldn't be able to delete them all.
+
+- Published/documented - the attack goes unnoticed but the company data
+is published online. May be in conjunction with ransomware.
+
