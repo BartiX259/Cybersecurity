@@ -699,3 +699,19 @@ Attacker shouldn't be able to delete them all.
 - Published/documented - the attack goes unnoticed but the company data
 is published online. May be in conjunction with ransomware.
 
+# Network segmentation and access control
+
+Physical, logical (vlan) or virtual.
+Benefits:
+- performance for high bandwidth apps
+- security, for example users can't talk to the database server
+- complicance - mandated segmentation, makes change control easier
+
+ACL - access control list - allow or disallow traffic based on
+source/dest ip, port number, time of day, etc.
+Restrict access to network devices - limit by ip or some identifier, prevent non-admin access.
+Be careful when configuring to not lock yourself out.
+
+Application allow/deny list - can a particular app run in the os.
+Identify an app not with its name but by hash, certificate, path or network zone.
+
